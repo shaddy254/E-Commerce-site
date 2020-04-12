@@ -1,17 +1,32 @@
 
-let openImage = document.getElementsByClassName("product_image")
-let addToCartButton = document.getElementsByClassName("add_to_cart")
-
+let openImage = document.getElementsByClassName("shop-item-image")
 for (let index = 0; index < openImage.length; index++) {
     const element = openImage[index];
     element.addEventListener('click', openDress)
 }
 
+let addToCartButton = document.getElementsByClassName("add_to_cart")
 for (let index = 0; index < addToCartButton.length; index++) {
     const element = addToCartButton[index];
-    element.addEventListener('click', addDressToCart);
+    element.addEventListener('click', addItem);
 }
 
+let openCartB = document.getElementsByClassName("cart_shopping")[0]
+    openCartB.addEventListener('click', opencart)
+
+function opencart(){
+    // window.open('shoppingcart.html', '_self')
+    console.log('opened cart');
+    let shoppingcart = document.getElementsByClassName('cart_section')[0]
+    shoppingcart.style.display = "block"
+
+    let removeB = document.getElementsByClassName("btn-danger")
+        for (let index = 0; index < removeB.length; index++) {
+        const element = removeB[index];
+        element.addEventListener('click', removeCartItem)
+        
+    }
+}
 
 function openDress(event) {
    console.log("dress opened");
@@ -19,32 +34,48 @@ function openDress(event) {
    window.open(image.src, "Window Title", "width=650, height=550");
 }
 
-function addDressToCart() {
-    console.log('Item added to cart');
-    var cartRow = document.createElement('div')
-    cartRow.classList.add('cart_selection')
-    var cartItems = document.getElementsByClassName('cart-item')[0]
-    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    for (let index = 0; index < cartItemNames.length; index++) {
-        const element = array[index];
-        if (cartItemNames[i].innerText == title) {
-            alert('this item already added to cart')
-        }
-    }
-    var cart_item = `
-    <div class="cart_selection">
-        <div class="cart-item cart-column">
-            <img src="/images/kiseo.jpeg" alt="image sected" width="100" height="100">
-            <span class="cart-item-title">T-Shirt</span>
-        </div>
-        <span class="cart-price cart-column"> KShs. 1000</span>
-        <div class="cart-quantity cart-column" >
-            <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>
-    </div>`
-    cartRow.innerHTML = cartRowContects
-    cartItems.append(cartRow)
-    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
-    cartRow.getElementsByClassName('cart-quantity-input').addEventListener('change', quantityChanged)
+function addItem(title, price, imageSrc){
+    var addToCartButton1 = event.target
+    parentdiv = addToCartButton1.parentElement
+    imageDiv = addToCartButton1.parentElement.parentElement
+    title = parentdiv.getElementsByClassName('shop-item-title')[0].innerHTML
+    price = parentdiv.getElementsByClassName('shop-item-price')[0].innerHTML
+    imageSrc = imageDiv.getElementsByClassName('shop-item-image')[0].src
+
+    let itemShop = document.createElement('div')
+    itemShop.className = 'cart-item cart-column'
+
+    itemShop.innerHTML = `
+      <div class="cart-item cart-column">
+          <img class="cart-item-image" src="${imageSrc}" alt="image selected" width="100" height="100">
+          <span class="cart-item-title">${title}</span>
+      </div>
+          <span class="cart-price cart-column">${price}</span>
+      <div class="cart-quantity cart-column" >
+          <input class="cart-quantity-input" type="number" value="1">
+          <button class="btn-danger" type="button">REMOVE</button>
+      </div> 
+    `;
+
+    document.getElementsByClassName('cart_selection')[0].appendChild(itemShop)
 }
+
+function removeCartItem() {
+    let removeB = event.target
+    cartItem = removeB.parentNode.parentNode
+    parentNode = cartItem.parentNode
+    parentNode.removeChild(cartItem)  
+
+}
+
+function quantityChanged() {
+    console.log('quantuity changed');
+}
+
+function hideCart(){
+    bodyclick = event.target
+    cart = document.getElementsByClassName("cart_section")
+    parent = cart.parentNode
+    parent.removeChild(cart)
+}
+
