@@ -1,19 +1,23 @@
 body{
-    background-color: snow;
+    background-color: #ff7f02;
+    display: flexbox;
+    flex-direction: column;
 }
 header{
     width: 95%;
     height: 60px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-content: space-around;
     justify-content: center;
     background-color: rgb(236, 135, 12);
     border: 1px solid rgb(233, 74, 27);
     margin: auto;
+    z-index: 500;
 }
 
 nav{
+    flex-basis: 30%;
     border: 1px solid rgb(230, 209, 203);
     height: 55px; 
     width: 98%;
@@ -44,6 +48,15 @@ nav ul li a{
     text-decoration: none;
     font-size: 22px;
 }
+
+.navigation_menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* flex-basis: 30%; */
+    z-index: 500;
+}
+
 .cart_shopping{
     position: absolute;
     right: 55px;
@@ -53,6 +66,7 @@ nav ul li a{
 
 
 .shop_container{
+    /* display: none; */
     width: 100%;
     margin: auto;
 }
@@ -67,7 +81,9 @@ nav ul li a{
 
 .product{
     margin: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
 }
 
 .shop-item-image{

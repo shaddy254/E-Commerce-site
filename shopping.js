@@ -24,7 +24,6 @@ function opencart(){
         for (let index = 0; index < removeB.length; index++) {
         const element = removeB[index];
         element.addEventListener('click', removeCartItem)
-        
     }
 }
 
@@ -55,8 +54,7 @@ function addItem(title, price, imageSrc){
           <input class="cart-quantity-input" type="number" value="1">
           <button class="btn-danger" type="button">REMOVE</button>
       </div> 
-    `;
-
+    `
     document.getElementsByClassName('cart_selection')[0].appendChild(itemShop)
 }
 
@@ -65,7 +63,6 @@ function removeCartItem() {
     cartItem = removeB.parentNode.parentNode
     parentNode = cartItem.parentNode
     parentNode.removeChild(cartItem)  
-
 }
 
 function quantityChanged() {
