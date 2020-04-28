@@ -17,11 +17,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: var(--background);
+    /* min-height: 100vh; */
+    /* background: var(--background); */
 }
 
 .navigation_menu{
+    display: none;
     width: 20rem;
     border-radius: 0.2rem;
     overflow: hidden;

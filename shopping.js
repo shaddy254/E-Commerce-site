@@ -76,3 +76,15 @@ function hideCart(){
     parent.removeChild(cart)
 }
 
+let menu_but = document.getElementById("nav_butt")
+let nav = document.getElementsByClassName('navigation_menu')[0]
+menu_but.onclick = function(){
+    console.log("clicked");
+    // nav.style.display = 'block'
+    if(nav.style.display == 'none'){
+        nav.style.display = 'block'
+    }else{
+        nav.style.display = 'none'
+    }
+
+}
