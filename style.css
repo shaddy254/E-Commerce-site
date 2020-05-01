@@ -67,7 +67,8 @@ nav ul li a{
 
 .product{
     margin: 5px;
-    border: 1px solid black;
+    border: 1px solid rgba(241, 156, 156, 0.5);
+    /* border */
 }
 
 .shop-item-image{
