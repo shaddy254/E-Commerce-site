@@ -158,7 +158,7 @@ nav{
 }
 
 .menu-item:target .menu-item__sub{
-    max-height: 10em;
+    max-height: 70em;
 }
 /* END NAVIGATOR - BLUE */
 
