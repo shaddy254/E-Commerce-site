@@ -85,6 +85,7 @@ menu_but.onclick = function(){
         nav.style.display = 'block'
     }else{
         nav.style.display = 'none'
+       
     }
 
 }

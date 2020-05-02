@@ -43,7 +43,7 @@ body{
     padding: 1rem 1.2rem;
     background: var(--blue);
     color: white;
-    position: relative;
+    position: sticky;
 }
 
 .btn:before{
