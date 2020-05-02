@@ -125,9 +125,10 @@ nav{
 
 .menu-item__sub{
     background: var(--grey);
-    overflow: hidden;
+    overflow-y: scroll;
     transition: max-height 0.3s;
     max-height: 0;
+    scrollbar-color: black;
 }
 
 .menu-item__sub a{
