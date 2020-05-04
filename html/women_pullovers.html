@@ -6,20 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <nav id="nav"> 
             <div id="nav_butt">
-                <div id="nav_butt"
-                    <a class="menu" href="#">&#9776;</a>
+                <div id="nav_butt">
+                <button class="btn"><i class="fa fa-bars"></i> Menu</button>
                 </div>
             </div>
            
         </nav>
         <div class="navigation_menu" style="height: max-content;">
             <li class="menu-item" id="profile">
-                <a href="#profile" class="btn"><i class="far fa-user">Men</i></a>
+                <a href="#profile" class="btn"><i >Men</i></a>
                 <div class="menu-item__sub">
                     <a href="/html/men_shoes.html">Shoes</a>
                     <a href="/html/men_watches.html">Classy Watches</a>
@@ -32,7 +33,7 @@
             </li>
     
             <li class="menu-item" id="messages">
-                <a href="#messages" class="btn"><i class="far fa-envelope">Ladies</i></a>
+                <a href="#messages" class="btn"><i>Ladies</i></a>
                 <div class="menu-item__sub">
                     <a href="/html/women_dresses.html">Dresses</a>
                     <a href="/html/women_tops.html">Tops</a>
@@ -44,7 +45,7 @@
                 </div>
             </li>
             <li class="menu-item" id="settings">
-                <a href="#settings" class="btn"><i class="far fa-cog">Children</i></a>
+                <a href="#settings" class="btn"><i >Children</i></a>
                 <div class="menu-item__sub">
                     <a href="/html/children_clothes.html">Child clothes</a>
                     <a href="/html/men_tshirts.html">T-shirts</a>
@@ -57,9 +58,18 @@
             </li>
     
         </div> 
+        
+        
         <div>
-            <a href="/index.html" class="home">&#127968;</a>
+            <button class="home"><i class="fa fa-home"></i>kitengemall</button>
         </div>
+        <div class="search_box">
+            <form action="dbh.includes.php" method="post">
+                <input type="text" placeholder="search here">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        
         <img class="cart_shopping" src="/images/basket.png" alt="basket_shopping" width="65px" height="auto">
     </header>
     <main>
