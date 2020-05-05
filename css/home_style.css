@@ -1,0 +1,37 @@
+main{
+    /* min-width: 980ppx; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#women_wear, #men_wear, #children_wear{
+    /* flex-basis: 33.333%; */
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection{
+    display: flex;
+    list-style: none;
+}
+
+.collection li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.collection li img{
+    width: 200px;
+}

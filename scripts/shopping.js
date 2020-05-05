@@ -83,9 +83,13 @@ menu_but.onclick = function(){
     // nav.style.display = 'block'
     if(nav.style.display == 'none'){
         nav.style.display = 'block'
-    }else{
+    }
+    
+    else{
         nav.style.display = 'none'
        
     }
+
+  
 
 }

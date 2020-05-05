@@ -5,421 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kitengemall kenya</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/home_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="menu_style.css"> -->
 </head>
 <body>
     <header>
         <nav id="nav"> 
             <div id="nav_butt">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
+                <div id="nav_butt">
+                <button class="btn"><i class="fa fa-bars"></i> Menu</button>
+                </div>
             </div>
+           
         </nav>
         <div class="navigation_menu" style="height: max-content;">
             <li class="menu-item" id="profile">
-                <a href="#profile" class="btn"><i class="far fa-user">Men</i></a>
+                <a href="#profile" class="btn"><i >Men</i></a>
                 <div class="menu-item__sub">
-                    <a href="html/men_shoes.html">Shoes</a>
-                    <a href="html/men_watches.html">Classy Watches</a>
-                    <a href="html/men_shirts.html">Shirts</a>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Socks</a>
-                    <a href="#">Jackets</a>
-                    <a href="#">Watches</a>
+                    <a href="/html/men_shoes.html">Shoes</a>
+                    <a href="/html/men_watches.html">Classy Watches</a>
+                    <a href="/html/men_shirts.html">Shirts</a>
+                    <a href="/html/men_tshirts.html">T-Shirts</a>
+                    <a href="/html/men_socks.html">Socks</a>
+                    <a href="/html/men_jackets.html">Jackets</a>
+                    <a href="/html/men_watches.html">Watches</a>
                 </div>
             </li>
-
+    
             <li class="menu-item" id="messages">
-                <a href="#messages" class="btn"><i class="far fa-envelope">Ladies</i></a>
+                <a href="#messages" class="btn"><i>Ladies</i></a>
                 <div class="menu-item__sub">
-                    <a href="index.html">Dresses</a>
-                    <a href="html/women_tops.html">Tops</a>
-                    <a href="html/women_watches.html">Classy Watches</a>
+                    <a href="/html/women_dresses.html">Dresses</a>
+                    <a href="/html/women_tops.html">Tops</a>
+                    <a href="/html/women_watches.html">Classy Watches</a>
+                    <a href="/html/women_shoes.html">shoes</a>
+                    <a href="/html/women_pullovers.html">pullovers</a>
+                    <a href="/html/women_tops.html">hats</a>
+                    <a href="/html/women_handbags.html">hand bags</a>
                 </div>
             </li>
             <li class="menu-item" id="settings">
-                <a href="#settings" class="btn"><i class="far fa-cog">Children</i></a>
+                <a href="#settings" class="btn"><i >Children</i></a>
                 <div class="menu-item__sub">
                     <a href="/html/children_clothes.html">Child clothes</a>
-                    <a href="#">T-shirts</a>
+                    <a href="/html/men_tshirts.html">T-shirts</a>
                     <a href="#">Shirts & Trousers</a>
                 </div>
             </li>
-
+    
             <li class="menu-item">
                 <a class="btn" href="#"><i class="fas fa-sign-out-all">Logout</i></a>
             </li>
-
+    
+        </div> 
+        
+        
+        <div>
+            <button class="home"><i class="fa fa-home"></i>kitengemall</button>
         </div>
-
+        <div class="search_box">
+            <form action="dbh.includes.php" method="post">
+                <input type="text" placeholder="search here">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        
         <img class="cart_shopping" src="/images/basket.png" alt="basket_shopping" width="65px" height="auto">
     </header>
 
     <main>
-        <section class="shop_container">
-            <div class="products">
+        <marquee style="color: aliceblue; font-size: 28px;" >Welcome for a collection of wearables, for both men and women</marquee>
 
-                <div class="product" >
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/kitimba43.jpg" alt="" >
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 8,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
+        <section id="women_wear">
+            <div class="wear_wrapper">
+                <div class="row">
+                    <ul class="collection">
+                        <li> <img  class="shop-item-image" src="/images/dresses/kiti_two_kii.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/ladieswatches/tissot-carson-automatic-lady-watch-p25742-34202_image.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/watches/apple-watch-series-3-42mm-sport-band-strap-red-bnripw6nx1_1-1000x1000.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/dresses/Red-High-Waist-Skirt-for-Women.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/hats_ladies/images (24).jpeg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/men_shirts/shirt_checked_brown.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/handbags/Women-Handbag-korean.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/dresses/high_quality_red.jpg" alt=""/> </li>         
+                    </ul>
                 </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/dress4.jpg" alt="" >
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 8,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/dress5.jpg" alt="" >
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 1,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/dress6.jpg" alt="" >
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 4,200</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/katot.jpeg" alt="" >
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 8,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/kitimba1.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 3,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/kitimba23.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 1,700</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/kitimba435.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/kayellow.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 2,500</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/dress2.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 8,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/dress1.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African special</h1>
-                        <h3 class="shop-item-price">KShs. 1,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/high1.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - high </h1>
-                        <h3 class="shop-item-price">KShs. 2,500</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/kiseo.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">Kinzuri Kitenge</h1>
-                        <h3 class="shop-item-price">KShs. 12,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/special.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">Special Places</h1>
-                        <h3 class="shop-item-price">KShs. 3,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img class="shop-item-image" src="/images/dresses/tufly.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title"> Dress - BUtterfly</h1>
-                        <h3 class="shop-item-price">KShs. 6,100</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/white.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/asian_green.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/asian_khaki.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/black_dress.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/blue_sleet.jpeg"
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/Cream_Golden-Plain-Satin-Silk-Saree" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/Dark-Green-Plain-Satin-Silk-Saree.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/crss_cross_dress.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/dress_cream.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/dresser_gtr.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/dresses_chacah.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/high_quality_red.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div> -->
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/short_skirt.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/Trendy-Ankara-Short-Gown-Styles.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/tumbo_cut_ter.jpg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>
-
-                <div class="product">
-                    <div class="product_image">
-                        <img  class="shop-item-image" src="/images/dresses/xl-darzi-9492-darzi-original-imafac34t9eqpdas.jpeg" alt="" width="200" height="200">
-                    </div>
-                    <div class="product_information">
-                        <h1 class="shop-item-title">African Kitenge - white</h1>
-                        <h3 class="shop-item-price">KShs. 2,800</h3>
-                        <input class="add_to_cart" type="button" value="Add to Cart">
-                    </div>
-                </div>  
-
             </div>
         </section>
-        
-        <section class="cart_section">
-            <h1>Shopping Cart</h1>
-           <div class="cart_selection">
-                <!-- <div class="cart-item cart-column">
-                    <img class="shop-item-image" src="/images/kiseo.jpeg" alt="image sected" width="100" height="100">
-                    <span class="cart-item-+6+title">T-Shirt</span>
+
+        <section id="men_wear">
+           <div class="wear_wrapper">
+                <div class="row">
+                    <ul class="collection">
+                        <li> <img  class="shop-item-image" src="/images/dresses/blue_sleet.jpeg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/ladieswatches/v--841874476__1755589668_530x@2x.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/ladieswatches/Vosliom-Starry-Sky-Dial-Watch-Stainless-Steel-Mesh-Watch-Elegant-Ladies-Watches-V67.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/dresses/blue_sleet.jpeg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/shoes/shoe_fiziki.jpeg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/handbags/Women_great_bag.jpeg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/ladiestops/product-image-882501851.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/dresses/blue_sleet.jpeg" alt=""/> </li>       
+                    </ul>
                 </div>
-                <span class="cart-price cart-column"> KShs. 1000</span>
-                <div class="cart-quantity cart-column" >
-                    <input class="cart-quantity-input" type="number" value="1">
-                    <button class="btn btn-danger" type="button">REMOVE</button>
-                </div> -->
-           </div>          
-           <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </div>
         </section>
+
+        <section class="children_wear">
+            <div class="wear_wrapper">
+                <div class="row">
+                    <ul class="collection">
+                        <li> <img  class="shop-item-image" src="/images/dresses/Dark-Green-Plain-Satin-Silk-Saree.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/dresses/black_dress.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/handbags/black_whitebag.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/hats_ladies/images (1).jpeg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/men_shirts/330248962-1.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/ladiestops/3o3bpd99c5c3m4pgq.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/pullovers/kitenge_top.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/hats_ladies/images (15).jpeg" alt=""/> </li> 
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="children_wear">
+            <div class="wear_wrapper">
+                <div class="row">
+                    <ul class="collection">
+                        <li> <img  class="shop-item-image" src="/images/men_shirts/classy_t_shirt.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/handbags/Mini-lady-dior-bag-prices-with-chain.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/dresses/asian_green.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/childrenclothes/images3.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/socks/24a7b806278a608d7bdfedc51ed94b25.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/ladiestops/AZULINA-Plus-Size-Print-Keyhole-T-Shirts-Women-T-Shirt-Causal-Flare-Sleeve-Keyhole-Neck-T__45384.1526456929.webp" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/ladieswatches/guess-ladies-watch-w14551l1.jpg" alt=""/> </li>
+                        <li> <img  class="shop-item-image" src="/images/shoes/fiziki_shoe_trendy.jpeg" alt=""/> </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <marquee style="color: rgb(8, 61, 238); font-size: 28px;" >Welcome for a collection of wearables, for both men and women</marquee>
     </main>
+    
     <script src="scripts/shopping.js"></script>
     <!-- <script src="addDiv.js"></script> -->
 </body>
