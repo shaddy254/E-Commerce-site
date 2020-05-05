@@ -6,78 +6,423 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ladies hats</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>   
     <header>
-    <nav id="nav"> 
-        <div id="nav_butt">
-            <div id="nav_butt"
-                <a class="menu" href="#">&#9776;</a>
+        <nav id="nav"> 
+            <div id="nav_butt">
+                <div id="nav_butt">
+                <button class="btn"><i class="fa fa-bars"></i> Menu</button>
+                </div>
             </div>
+           
+        </nav>
+        <div class="navigation_menu" style="height: max-content;">
+            <li class="menu-item" id="profile">
+                <a href="#profile" class="btn"><i >Men</i></a>
+                <div class="menu-item__sub">
+                    <a href="/html/men_shoes.html">Shoes</a>
+                    <a href="/html/men_watches.html">Classy Watches</a>
+                    <a href="/html/men_shirts.html">Shirts</a>
+                    <a href="/html/men_tshirts.html">T-Shirts</a>
+                    <a href="/html/men_socks.html">Socks</a>
+                    <a href="/html/men_jackets.html">Jackets</a>
+                    <a href="/html/men_watches.html">Watches</a>
+                </div>
+            </li>
+    
+            <li class="menu-item" id="messages">
+                <a href="#messages" class="btn"><i>Ladies</i></a>
+                <div class="menu-item__sub">
+                    <a href="/html/women_dresses.html">Dresses</a>
+                    <a href="/html/women_tops.html">Tops</a>
+                    <a href="/html/women_watches.html">Classy Watches</a>
+                    <a href="/html/women_shoes.html">shoes</a>
+                    <a href="/html/women_pullovers.html">pullovers</a>
+                    <a href="/html/women_tops.html">hats</a>
+                    <a href="/html/women_handbags.html">hand bags</a>
+                </div>
+            </li>
+            <li class="menu-item" id="settings">
+                <a href="#settings" class="btn"><i >Children</i></a>
+                <div class="menu-item__sub">
+                    <a href="/html/children_clothes.html">Child clothes</a>
+                    <a href="/html/men_tshirts.html">T-shirts</a>
+                    <a href="#">Shirts & Trousers</a>
+                </div>
+            </li>
+    
+            <li class="menu-item">
+                <a class="btn" href="#"><i class="fas fa-sign-out-all">Logout</i></a>
+            </li>
+    
+        </div> 
+        
+        
+        <div>
+            <button class="home"><i class="fa fa-home"></i><a href="/index.html">kitengemall</a></button>
         </div>
-    </nav>
-    <div class="navigation_menu" style="height: max-content;">
-        <li class="menu-item" id="profile">
-            <a href="#profile" class="btn"><i class="far fa-user">Men</i></a>
-            <div class="menu-item__sub">
-                <a href="/html/men_shoes.html">Shoes</a>
-                <a href="/html/men_watches.html">Classy Watches</a>
-                <a href="/html/men_shirts.html">Shirts</a>
-                <a href="/html/men_tshirts.html">T-Shirts</a>
-                <a href="/html/men_socks.html">Socks</a>
-                <a href="/html/men_jackets.html">Jackets</a>
-                <a href="/html/men_watches.html">Watches</a>
-            </div>
-        </li>
-
-        <li class="menu-item" id="messages">
-            <a href="#messages" class="btn"><i class="far fa-envelope">Ladies</i></a>
-            <div class="menu-item__sub">
-                <a href="/html/women_dresses.html">Dresses</a>
-                <a href="/html/women_tops.html">Tops</a>
-                <a href="/html/women_watches.html">Classy Watches</a>
-                <a href="/html/women_shoes.html">shoes</a>
-                <a href="/html/women_pullovers.html">pullovers</a>
-                <a href="/html/women_tops.html">hats</a>
-                <a href="/html/women_handbags.html">hand bags</a>
-            </div>
-        </li>
-        <li class="menu-item" id="settings">
-            <a href="#settings" class="btn"><i class="far fa-cog">Children</i></a>
-            <div class="menu-item__sub">
-                <a href="/html/children_clothes.html">Child clothes</a>
-                <a href="/html/men_tshirts.html">T-shirts</a>
-                <a href="#">Shirts & Trousers</a>
-            </div>
-        </li>
-
-        <li class="menu-item">
-            <a class="btn" href="#"><i class="fas fa-sign-out-all">Logout</i></a>
-        </li>
-
-    </div>
-
-    <img class="cart_shopping" src="/images/basket.png" alt="basket_shopping" width="65px" height="auto">
-</header>
-<main>
-    <section class="shop_container">
-        <div class="products">
-            <div class="product_image">
-                <img class="shop-item-image" src="/images/hats_ladies/download (1).jpeg" alt="" >
-            </div>
-            <div class="product_information">
-                <h1 class="shop-item-title">socks</h1>
-                <h3 class="shop-item-price">KShs 300</h3>
-                <input class="add_to_cart" type="button" value="Add to Cart">
-            </div>
+        <div class="search_box">
+            <form action="dbh.includes.php" method="post">
+                <input type="text" placeholder="search here">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
+        
+        <img class="cart_shopping" src="/images/basket.png" alt="basket_shopping" width="65px" height="auto">
+    </header>
+    <main>
+        <section class="shop_container">
+            <div class="products">
+                <div class="product" >
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/download (1).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">African Hats</h1>
+                        <h3 class="shop-item-price">KShs.800</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/download (2).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Black Hat</h1>
+                        <h3 class="shop-item-price">KShs. 880</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/download.jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Brown Hat</h1>
+                        <h3 class="shop-item-price">KShs. 1,000</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (1).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">African Kikoi</h1>
+                        <h3 class="shop-item-price">KShs. 1,200</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (10).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Standard Hat, brown</h1>
+                        <h3 class="shop-item-price">KShs. 1,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (11).jpeg" alt="" width="200" height="200">
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Black Aerier</h1>
+                        <h3 class="shop-item-price">KShs. 2500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (12).jpeg" alt="" width="200" height="200">
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Kolaous hat</h1>
+                        <h3 class="shop-item-price">KShs. 500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (13).jpeg" alt="" width="200" height="200">
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Wedding Best</h1>
+                        <h3 class="shop-item-price">KShs. 999</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (14).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">African Kitenge</h1>
+                        <h3 class="shop-item-price">KShs. 2,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
 
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (15).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Wooven Kakhi</h1>
+                        <h3 class="shop-item-price">KShs. 2,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
 
-     
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (16).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Royal Black Hat</h1>
+                        <h3 class="shop-item-price">KShs. 1,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
 
-        </div>
-    </section>
-</main>
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (17).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Black Ianoka</h1>
+                        <h3 class="shop-item-price">KShs. 750</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (18).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Asian Colori</h1>
+                        <h3 class="shop-item-price">KShs. 500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (19).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Merino white Hat</h1>
+                        <h3 class="shop-item-price">KShs. 2,000</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (2).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Cowboy Lady Hat</h1>
+                        <h3 class="shop-item-price">KShs. 2,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (20).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Kawalae</h1>
+                        <h3 class="shop-item-price">KShs. 550</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (21).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Hoover Hanuka</h1>
+                        <h3 class="shop-item-price">KShs. 2,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (22).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Smooth Wool Hat</h1>
+                        <h3 class="shop-item-price">KShs. 1,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (23).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Mexiccan Lady Gaga</h1>
+                        <h3 class="shop-item-price">KShs. 3,599</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (24).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Leather Hats</h1>
+                        <h3 class="shop-item-price">KShs. 950</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (25).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Slitty Girl Hat</h1>
+                        <h3 class="shop-item-price">KShs. 1,899</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (26).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Flasy Polished</h1>
+                        <h3 class="shop-item-price">KShs. 1,700</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (27).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Orange Free state Hats</h1>
+                        <h3 class="shop-item-price">KShs. 1,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (3).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Angelic Lady</h1>
+                        <h3 class="shop-item-price">KShs. 2,200</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (4).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Maga hats</h1>
+                        <h3 class="shop-item-price">KShs. 1,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (5).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Blue Sun shield</h1>
+                        <h3 class="shop-item-price">KShs. 800</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (6).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Tiger Hat</h1>
+                        <h3 class="shop-item-price">KShs. 1,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (7).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Stylish Girl</h1>
+                        <h3 class="shop-item-price">KShs. 2,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images (8).jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Rugged Front</h1>
+                        <h3 class="shop-item-price">KShs. 900</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="product_image">
+                        <img class="shop-item-image" src="/images/hats_ladies/images.jpeg" alt="" >
+                    </div>
+                    <div class="product_information">
+                        <h1 class="shop-item-title">Girl Black</h1>
+                        <h3 class="shop-item-price">KShs. 1,500</h3>
+                        <input class="add_to_cart" type="button" value="Add to Cart">
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+        
+        <section class="cart_section">
+            <h1>Shopping Cart</h1>
+           <div class="cart_selection">
+                <!-- <div class="cart-item cart-column">
+                    <img class="shop-item-image" src="/images/kiseo.jpeg" alt="image sected" width="100" height="100">
+                    <span class="cart-item-+6+title">T-Shirt</span>
+                </div>
+                <span class="cart-price cart-column"> KShs. 1000</span>
+                <div class="cart-quantity cart-column" >
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div> -->
+           </div>          
+           <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </main>
 <script src="/scripts/shopping.js"></script>
 
     

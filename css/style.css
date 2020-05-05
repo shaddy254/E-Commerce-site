@@ -69,6 +69,10 @@ nav{
     height: 100%;
     cursor: pointer;
 }
+.home_btn:hover{
+    background-color:fuchsia ;
+    
+}
 .home{
     position: relative;
     top: 50%;
@@ -79,6 +83,10 @@ nav{
     height: 50%;
     font-size: 1rem;
     cursor: pointer;
+    left: 200px;
+}
+.home a:hover{
+    background-color: fuchsia;
 }
 .search_box{
     font-size: 2.5rem;
@@ -104,11 +112,14 @@ nav{
     height: 30px;
     font-size: 1rem;
 }
-.cart_shopping{
+.cart_shopping{   
+    font-size: 2.5rem;
     position: relative;
-    right: 5px;
-    top: 5px;
-    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    justify-content: center;
+    height: 100%;
 }
 
 .navigation_menu{
@@ -226,12 +237,14 @@ nav{
     height: 200px;
 }
 
+
 .shop-item-image{
     margin: auto;
     width: 100%;
     border-radius: 2px;
     height: 190px;
     cursor: pointer;
+   
 }
 
 .product_information{
