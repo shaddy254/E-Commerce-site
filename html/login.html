@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav"> 
+            <div id="nav_butt">
+                <div id="nav_butt">
+                <button class="btn"><i class="fa fa-bars"></i> Menu</button>
+                </div>
+            </div>
+           
+        </nav>
+        <div class="navigation_menu" style="height: max-content;">
+            <li class="menu-item" id="profile">
+                <a href="#profile" class="btn"><i >Men</i></a>
+                <div class="menu-item__sub">
+                    <a href="/html/men_shoes.html">Shoes</a>
+                    <a href="/html/men_watches.html">Classy Watches</a>
+                    <a href="/html/men_shirts.html">Shirts</a>
+                    <a href="/html/men_tshirts.html">T-Shirts</a>
+                    <a href="/html/men_socks.html">Socks</a>
+                    <a href="/html/men_jackets.html">Jackets</a>
+                    <a href="/html/men_watches.html">Watches</a>
+                </div>
+            </li>
+    
+            <li class="menu-item" id="messages">
+                <a href="#messages" class="btn"><i>Ladies</i></a>
+                <div class="menu-item__sub">
+                    <a href="/html/women_dresses.html">Dresses</a>
+                    <a href="/html/women_tops.html">Tops</a>
+                    <a href="/html/women_watches.html">Classy Watches</a>
+                    <a href="/html/women_shoes.html">shoes</a>
+                    <a href="/html/women_pullovers.html">pullovers</a>
+                    <a href="/html/women_tops.html">hats</a>
+                    <a href="/html/women_handbags.html">hand bags</a>
+                </div>
+            </li>
+            <li class="menu-item" id="settings">
+                <a href="#settings" class="btn"><i >Children</i></a>
+                <div class="menu-item__sub">
+                    <a href="/html/children_clothes.html">Child clothes</a>
+                    <a href="/html/men_tshirts.html">T-shirts</a>
+                    <a href="#">Shirts & Trousers</a>
+                </div>
+            </li>
+    
+            <li class="menu-item">
+                <a class="btn" href="#"><i class="fas fa-sign-out-all">Logout</i></a>
+            </li>
+    
+        </div> 
+        
+        
+        <div home_btn>
+            <button class="home"><i class="fa fa-home"></i><a href="/index.html">kitengemall</a></button>
+        </div>
+        <div class="search_box">
+            <form action="dbh.includes.php" method="post">
+                <input type="text" placeholder="search here">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="login">
+            <a href="/html/login.html"> login</a>
+        </div>
+        
+        <img class="cart_shopping" src="/images/basket.png" alt="basket_shopping" width="65px" height="auto">
+    </header>
+    <main>  <br>
+        <br>
+        <br>
+        <div class="login_form">
+            <form action="dbh.login.php" method="POST" >
+                <h3>welcome To Kitengemall Kenya</h3>
+                <h3>Enter your Name and Password to login</h3>
+                <input type="text" name="username" placeholder="username" required><br>
+                <br>
+                <input type="password" name="pwd" placeholder="password" required>
+                <br>
+                <br>
+                <button type="submit" >submit</button>
+                <br>
+                <h1><a href="password.hml">forgot password</a> </h1>
+                <h3>  Don't have an account
+                    <a href="signin.html">sign in</a></h3>
+              
+            </form>
+        </div>
+       </main>
+  
+    
+</body>
+</html>

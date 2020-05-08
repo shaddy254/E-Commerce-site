@@ -19,6 +19,7 @@ function opencart(){
     console.log('opened cart');
     let shoppingcart = document.getElementsByClassName('cart_section')[0]
     shoppingcart.style.display = "block"
+    shoppingcart.style.background.color ="blue"
 
     let removeB = document.getElementsByClassName("btn-danger")
         for (let index = 0; index < removeB.length; index++) {
@@ -30,7 +31,7 @@ function opencart(){
 function openDress(event) {
    console.log("dress opened");
    image = event.target
-   window.open(image.src, "Window Title", "width=650, height=550");
+   window.open(image.src, "Window Title", "width=300, height=400");
 }
 
 function addItem(title, price, imageSrc){
@@ -41,12 +42,14 @@ function addItem(title, price, imageSrc){
     price = parentdiv.getElementsByClassName('shop-item-price')[0].innerHTML
     imageSrc = imageDiv.getElementsByClassName('shop-item-image')[0].src
 
+    let carttotal= document.createElement('div')
     let itemShop = document.createElement('div')
     itemShop.className = 'cart-item cart-column'
 
     itemShop.innerHTML = `
       <div class="cart-item cart-column">
           <img class="cart-item-image" src="${imageSrc}" alt="image selected" width="100" height="100">
+          <br>
           <span class="cart-item-title">${title}</span>
       </div>
           <span class="cart-price cart-column">${price}</span>
@@ -54,15 +57,18 @@ function addItem(title, price, imageSrc){
           <input class="cart-quantity-input" type="number" value="1">
           <button class="btn-danger" type="button">REMOVE</button>
       </div> 
+      <div>  Total </div><br>
+     
     `
+    carttotal.innerHTML =' <div> Cart Total</div>'
     document.getElementsByClassName('cart_selection')[0].appendChild(itemShop)
 }
 
 function removeCartItem() {
     let removeB = event.target
-    cartItem = removeB.parentNode.parentNode
-    parentNode = cartItem.parentNode
-    parentNode.removeChild(cartItem)  
+    cartItem = removeB.parentElement.parentElement
+    parentElement = cartItem.parentElement
+    parentElement.removeChild(cartItem)  
 }
 
 function quantityChanged() {

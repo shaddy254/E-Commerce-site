@@ -1,14 +1,8 @@
-console.log("hello world");
-var json = {"name":"nextgencoder"}
-var num = 1
-
-console.log(json); //{name: 'nextgencoder'}
-console.log(num); //1
-console.log(num + ""); //1
-console.log(json+""); //object  Object
-
-console.log(JSON.stringify(json)); // {"name":"nextgencoder"}
-
-
+let carts= document.querySelectorAll('.add_to_cart');
+for(let i=0;i<carts.length; i++){
+    carts[i].addEventListener('click',() => {
+        console.log("added to cart");
+    })
+}
 
 

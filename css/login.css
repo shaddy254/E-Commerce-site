@@ -1,0 +1,39 @@
+
+    
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   background-color: #ff7f02;
+}
+main{
+    top: 70px;
+}
+    
+.login_form{
+    top: 70px;
+    width: 250px;
+    height: 300px;
+    background-color: brown;
+    padding: 20px;
+}
+.login_form input{
+   
+}
+.login_form a{
+    text-decoration: none;
+    font-size: 22px;
+}
+.sign_form{
+    top: 70px;
+    width: 250px;
+    height: 400px;
+    background-color: brown;
+    padding: 20px;
+}
+.sign_form a{
+    text-decoration: none;
+    font-size: 22px;
+}
+}

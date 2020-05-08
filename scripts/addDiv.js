@@ -56,6 +56,8 @@ function addRow() {
             <input class="cart-quantity-input" type="number" value="1">
             <button class="btn btn-danger" type="button">REMOVE</button>
         </div> 
+        <div  class="total">TOTAL
+        </div>
       `;
 
       document.getElementsByClassName('cart_selection')[0].appendChild(itemShop)
